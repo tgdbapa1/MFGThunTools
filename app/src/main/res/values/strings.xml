@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Home Screen -->
+    <string name="app_name">MFG Thun Tools</string>
+
+    <!-- HB-WYL Screen start-->
+    <string name="title_activity_wb_wyl">HB-WYL</string>
+    <string name="action_settings_wyl">Settings</string>
+    <string name="call_signe_wyl">HB-WYL</string>
+    <string name="warning_text_wyl">YOU USE THIS PROGRAM AT YOUR OWN RISK!</string>
+    <string name="Title_Col1_wyl">Last update 15.01.2016\n</string>
+    <string name="Title_Col2_wyl">Weight\n(kg)</string>
+    <string name="Title_Col3_wyl">Arm\n(mm)</string>
+    <string name="Title_Col4_wyl">Moment\n(kg * mm)</string>
+    <string name="BEW_wyl">Basic empty weight</string>
+    <string name="BEW_Weight_wyl">394.35</string>
+    <string name="BEW_Arm_wyl"></string>
+    <string name="BEW_Moment_wyl">165959.5</string>
+    <string name="Pilot_wyl">Pilot</string>
+    <string name="Pilot_Arm_wyl">700</string>
+    <string name="Passenger_wyl">Passenger</string>
+    <string name="Passenger_Arm_wyl">700</string>
+    <string name="BaggageA_wyl">Baggage compartment - A</string>
+    <string name="BaggageA_Arm_wyl">1310</string>
+    <string name="BaggageB_wyl">Baggage compartment - B</string>
+    <string name="BaggageB_Arm_wyl">1800</string>
+    <string name="WingLockers_wyl">Wing lockers (max. 40 kg)</string>
+    <string name="WingLockers_Arm_wyl">600</string>
+    <string name="Fuel_wyl">Fuel (114 Liter max. )</string>
+    <string name="Fuel_Arm">180</string>
+    <string name="TakeoffWeight_wyl">Take-off weight (600 kg max.)</string>
+    <string name="TakeoffWeight_Weight_wyl"></string>
+    <string name="TakeoffWeight_Arm_wyl"></string>
+    <string name="TakeoffWeight_Moment_wyl"></string>
+    <string name="WarningBaggage_wyl">Max. weight (18 kg) in baggage compartment A+B exceeded.\n</string>
+    <string name="WarningWingLockers_wyl">Wing lockers are out of limits (max. 40 kg).\n</string>
+    <string name="WarningTakeOff_wyl">Your takeoff mass exceeds the limit of 600 kg.\n</string>
+    <string name="WarningCG_wyl">Your C.G. position is out of limits.\n</string>
+    <!-- HB-WYL Screen end -->
+
+    <!-- HB-CIE Screen start -->
+    <string name="title_activity_wb_cie">HB-CIE</string>
+    <string name="action_settings_cie">Settings</string>
+    <string name="call_signe_cie">HB-CIE</string>
+    <string name="warning_text_cie">YOU USE THIS PROGRAM AT YOUR OWN RISK!</string>
+    <string name="Title_Col1_cie">Last update 14.12.2015\n</string>
+    <string name="Title_Col2_cie">Weight\n(kg)</string>
+    <string name="Title_Col3_cie">Moment\n(mKg)</string>
+    <string name="BEW_cie">Basic empty weight</string>
+    <string name="BEW_Weight_cie">704.89</string>
+    <string name="BEW_Moment_cie">696.15</string>
+    <string name="Fuel_cie">Usable Fuel</string>
+    <string name="Pilot_cie">Pilot and Front Passenger</string>
+    <string name="Passenger_cie">Rear Passenger</string>
+    <string name="BaggageA_cie">Baggage Area 1</string>
+    <string name="BaggageB_cie">Baggage Area 2</string>
+    <string name="TakeoffWeight_cie">TAKEOFF WEIGHT AND MOMENT</string>
+    <string name="TakeoffWeight_Weight_cie"></string>
+    <string name="TakeoffWeight_Moment_cie"></string>
+    <string name="WarningBaggage_cie">Max. weight (54 kg) in baggage area 1+2 exceeded.\n</string>
+    <string name="WarningBaggageA_cie">Max. weight (54 kg) in baggage area 1 exceeded.\n</string>
+    <string name="WarningBaggageB_cie">Max. weight (23 kg) in baggage area 2 exceeded.\n</string>
+    <string name="WarningTakeOff_cie">Your takeoff mass exceeds the limit of 1089 kg.\n</string>
+    <string name="WarningCG_cie">Your C.G. position is out of limits.\n</string>
+    <!-- HB-CIE Screen end -->
+
+    <!-- HB-CIT Screen start -->
+    <string name="title_activity_wb_cit">HB-CIT</string>
+    <string name="action_settings_cit">Settings</string>
+    <string name="call_signe_cit">HB-CIT</string>
+    <string name="warning_text_cit">YOU USE THIS PROGRAM AT YOUR OWN RISK!</string>
+    <string name="Title_Col1_cit">Last update 19.06.2013\n</string>
+    <string name="Title_Col2_cit">Weight\n(lbs)</string>
+    <string name="Title_Col3_cit">Moment\n(In-Lbs)</string>
+    <string name="BEW_cit">Basic empty weight</string>
+    <string name="BEW_Weight_cit">1553.20</string>
+    <string name="BEW_Moment_cit">61879.80</string>
+    <string name="Fuel_cit">Usable Fuel</string>
+    <string name="Pilot_cit">Pilot and Front Passenger</string>
+    <string name="Passenger_cit">Rear Passenger</string>
+    <string name="BaggageA_cit">Baggage Area 1</string>
+    <string name="BaggageB_cit">Baggage Area 2</string>
+    <string name="TakeoffWeight_cit">TAKEOFF WEIGHT AND MOMENT</string>
+    <string name="RampWeight_cit">Ramp Weight and Moment</string>
+    <string name="CalcWeight_cit">Fuel allowance (engine start, taxi, runup)</string>
+    <string name="WarningBaggageA_cit">Max. weight (120 lbs) in baggage area 1 exceeded.\n</string>
+    <string name="WarningBaggageB_cit">Max. weight (50 lbs) in baggage area 2 exceeded.\n</string>
+    <string name="WarningTakeOff_cit">Your takeoff mass exceeds the limit of 2400 lbs.\n</string>
+    <string name="WarningCG_cit">Your C.G. position is out of limits.\n</string>
+    <!-- HB-CIT Screen end -->
+
+    <!-- HB-PMK Screen start -->
+    <string name="title_activity_wb_pmk">HB-PMY</string>
+    <string name="action_settings_pmk">Settings</string>
+    <string name="call_signe_pmk">HB-PMY</string>
+    <string name="warning_text_pmk">YOU USE THIS PROGRAM AT YOUR OWN RISK!</string>
+    <string name="Title_Col1_pmk">Last update 11.02.2011\n</string>
+    <string name="Title_Col2_pmk">Weight\n(lbs)</string>
+    <string name="Title_Col3_pmk">Moment\n(In-Lbs)</string>
+    <string name="BEW_pmk">Basic empty weight</string>
+    <string name="BEW_Weight_pmk">1654.20</string>
+    <string name="BEW_Moment_pmk">144122.60</string>
+    <string name="Fuel_pmk">Fuel (48 Gallon Maximum)</string>
+    <string name="Pilot_pmk">Pilot and Front Passenger</string>
+    <string name="Passenger_pmk">Rear Passenger</string>
+    <string name="BaggageA_pmk">Baggage</string>
+    <string name="TakeoffWeight_pmk">TAKEOFF WEIGHT AND MOMENT</string>
+    <string name="RampWeight_pmk">Ramp Weight and Moment</string>
+    <string name="CalcWeight_pmk">Fuel allowance (engine start, taxi, runup)</string>
+    <string name="WarningBaggageA_pmk">Max. weight (200 lbs) in baggage area exceeded.\n</string>
+    <string name="WarningTakeOff_pmk">Your takeoff mass exceeds the limit of 2550 lbs.\n</string>
+    <string name="WarningCG_pmk">Your C.G. position is out of limits.\n</string>
+    <!-- HB-PMK Screen end -->
+
+
+    <string name="action_save">SAVE</string>
+    <string name="action_open">OPEN</string>
+    <string name="title_activity_activity_save_file">activity_save_file</string>
+    <string name="title_activity_open_file">open_file</string>
+
+</resources>

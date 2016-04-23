@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tools.mfgthun.ch.mfgthuntools"
+    android:versionCode="5"
+    android:versionName="1.5"
+    android:installLocation="preferExternal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.wyl.WeightBalanceWyl"
+            android:label="@string/title_activity_wb_wyl"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.cie.WeightBalanceCie"
+            android:label="@string/title_activity_wb_cie"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.cit.WeightBalanceCit"
+            android:label="@string/title_activity_wb_cit"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.pmk.WeightBalancePmk"
+            android:label="@string/title_activity_wb_pmk"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.wyl.SaveFileWyl"
+            android:label="save_file"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.wyl.OpenFileWyl"
+            android:label="@string/title_activity_open_file"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />>
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.cie.SaveFileCie"
+            android:label="save_file_cie"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.cie.OpenFileCie"
+            android:label="open_file_cie"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />>
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.cit.SaveFileCit"
+            android:label="save_file_cit"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.cit.OpenFileCit"
+            android:label="open_file_cit"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />>
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.pmk.SaveFilePmk"
+            android:label="save_file_pmk"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />
+        </activity>
+        <activity
+            android:name=".tools.mfgthun.ch.mfgthuntools.pmk.OpenFilePmk"
+            android:label="open_file_pmk"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tools.mfgthun.ch.mfgthuntools.MainMenu" />>
+        </activity>
+    </application>
+
+</manifest>

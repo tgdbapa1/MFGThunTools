@@ -1,0 +1,385 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        android:id="@+id/linear_layout"
+        android:background="#2d0f80ff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:text="@string/warning_text_wyl"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="#ffff001e" />
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:text="@string/Title_Col1_wyl"
+                    android:layout_span="2"
+                    android:padding="2dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left" />
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:text="@string/Title_Col2_wyl"
+                    android:padding="2dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:text="@string/Title_Col3_wyl"
+                    android:padding="2dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:text="@string/Title_Col4_wyl"
+                    android:padding="2dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:layout_width="150dp"
+                    android:text="@string/BEW_wyl"
+                    android:autoText="false"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/bew_weight_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:layout_width="50dp"
+                    android:text="@string/BEW_Weight_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/bew_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:layout_width="50dp"
+                    android:text="@string/BEW_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/bew_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:layout_width="60dp"
+                    android:text="@string/BEW_Moment_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:layout_width="150dp"
+                    android:text="@string/Pilot_wyl"
+                    android:autoText="false"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/pilot_weight_wyl"
+                    android:background="@drawable/cell_shape_editable"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/pilot_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:layout_width="50dp"
+                    android:text="@string/Pilot_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/pilot_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:layout_width="60dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:text="@string/Passenger_wyl"
+                    android:textSize="12dp"/>
+                <EditText
+                    android:id="@+id/passenger_weight_wyl"
+                    android:background="@drawable/cell_shape_editable"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/passenger_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="@string/Passenger_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/passenger_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:text="@string/BaggageA_wyl"
+                    android:textSize="12dp"/>
+                <EditText
+                    android:id="@+id/baggageA_weight_wyl"
+                    android:background="@drawable/cell_shape_editable"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/baggageA_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="@string/BaggageA_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/baggageA_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:text="@string/BaggageB_wyl"
+                    android:textSize="12dp"/>
+                <EditText
+                    android:id="@+id/baggageB_weight_wyl"
+                    android:background="@drawable/cell_shape_editable"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/baggageB_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="@string/BaggageB_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/baggageB_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:text="@string/WingLockers_wyl"
+                    android:textSize="12dp"/>
+                <EditText
+                    android:id="@+id/wingLockers_weight_wyl"
+                    android:background="@drawable/cell_shape_editable"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:hint="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/wingLockers_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="@string/WingLockers_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/wingLockers_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="@string/Fuel_wyl"
+                    android:textSize="12dp"/>
+                <LinearLayout>
+                    <TextView
+                        android:background="@drawable/cell_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Liter "
+                        android:textSize="12dp"/>
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fuel_liter_wyl"
+                        android:background="@drawable/cell_shape_editable"
+                        android:padding="5dp"
+                        android:inputType="numberDecimal"
+                        android:hint="0"
+                        android:textSize="12dp"
+                        android:gravity="center" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/fuel_weight_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/fuel_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="@string/Fuel_Arm"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/fuel_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:text="@string/TakeoffWeight_wyl"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/takeOffWeight_weight_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="@string/TakeoffWeight_Weight_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/takeOffWeight_arm_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="@string/TakeoffWeight_Arm_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/takeOffWeight_moment_wyl"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="@string/TakeoffWeight_Moment_wyl"
+                    android:textSize="12dp"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warnings"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/warnings_wyl"
+            android:background="@drawable/cell_shape"
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:padding="3dp"
+            android:textColor="#ff079520"
+            android:textSize="12dp"
+            android:lines="5"
+            android:text="none"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+            android:textStyle="bold"
+            android:text="Weight vs. C.G. Envelope" />
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/plot_wyl"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            androidPlot.graphWidget.marginTop="10dp"
+            androidPlot.graphWidget.marginBottom="30dp"
+            androidPlot.graphWidget.marginLeft="10dp"
+            androidPlot.graphWidget.marginRight="5dp"/>
+
+    </LinearLayout>
+</ScrollView>

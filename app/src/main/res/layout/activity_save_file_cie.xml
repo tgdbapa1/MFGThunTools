@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tools.mfgthun.ch.mfgthuntools.tools.mfgthun.ch.mfgthuntools.cie.SaveFileCie"
+    android:background="#2d0f80ff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter filename"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/fileName"
+        android:hint="filename"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/button_save"
+            android:text="Save"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_action"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/button_cancel"
+            android:text="Cancel"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_action"/>
+
+    </LinearLayout>
+
+</LinearLayout>

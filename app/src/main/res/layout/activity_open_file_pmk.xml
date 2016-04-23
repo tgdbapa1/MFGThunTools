@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tools.mfgthun.ch.mfgthuntools.tools.mfgthun.ch.mfgthuntools.pmk.OpenFilePmk"
+    android:background="#2d0f80ff">
+
+    <TextView android:text="Choose filename to open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/listFiles"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/pressed_color"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"/>
+
+    <TextView 
+        android:id="@+id/empty_listFiles"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="No files found"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/button_open"
+            android:text="Open"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_action"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/button_delete"
+            android:text="Delete"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_action"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/button_cancel"
+            android:text="Cancel"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_action"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:MFGThunTools="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_save_cie"
+        android:icon="@drawable/ic_action_save"
+        android:title="SAVE"
+        MFGThunTools:showAsAction="ifRoom" />
+    <item android:id="@+id/action_open_cie"
+        android:icon="@drawable/ic_action_open"
+        android:title="@string/action_open"
+        MFGThunTools:showAsAction="ifRoom"/>
+</menu>
