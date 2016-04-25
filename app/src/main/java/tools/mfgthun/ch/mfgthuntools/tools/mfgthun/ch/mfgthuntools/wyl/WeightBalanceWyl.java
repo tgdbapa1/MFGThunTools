@@ -54,6 +54,7 @@ public class WeightBalanceWyl extends ActionBarActivity {
     TextView takeOffWeight;
     TextView takeOffArm;
     TextView takeOffMoment;
+    TextView savedTime;
 
     Button fileSave;
     String fileName;
@@ -274,6 +275,7 @@ public class WeightBalanceWyl extends ActionBarActivity {
             String baggageB_weight = data.getStringExtra("baggageB_weight");
             String wing_lockers_weight = data.getStringExtra("wing_lockers_weight");
             String fuel = data.getStringExtra("fuel");
+            String dateTime = data.getStringExtra("dateTime_saved");
 
             pilotWeight = (EditText) findViewById(R.id.pilot_weight_wyl);
             passengerWeight = (EditText) findViewById(R.id.passenger_weight_wyl);
@@ -281,6 +283,7 @@ public class WeightBalanceWyl extends ActionBarActivity {
             baggageBWeight = (EditText) findViewById(R.id.baggageB_weight_wyl);
             wingLockersWeight = (EditText) findViewById(R.id.wingLockers_weight_wyl);
             fuelLiter = (EditText) findViewById(R.id.fuel_liter_wyl);
+            savedTime = (TextView) findViewById(R.id.saved_time);
 
             pilotWeight.setText(pilot_weight);
             passengerWeight.setText(passenger_weight);
@@ -288,7 +291,12 @@ public class WeightBalanceWyl extends ActionBarActivity {
             baggageBWeight.setText(baggageB_weight);
             wingLockersWeight.setText(wing_lockers_weight);
             fuelLiter.setText(fuel);
+            savedTime.setText(dateTime);
 
+        } else if (resultCode == 200) {
+            String dateTime = data.getStringExtra("dateTime_saved");
+            savedTime = (TextView) findViewById(R.id.saved_time);
+            savedTime.setText(dateTime);
         }
     }
 

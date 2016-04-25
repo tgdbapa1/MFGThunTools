@@ -384,5 +384,14 @@
             androidPlot.graphWidget.marginLeft="10dp"
             androidPlot.graphWidget.marginRight="5dp"/>
 
+        <TextView
+            android:id="@+id/saved_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:textStyle="bold"
+            android:text="This has not been saved" />
+
     </LinearLayout>
 </ScrollView>

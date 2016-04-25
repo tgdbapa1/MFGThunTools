@@ -125,6 +125,7 @@ public class OpenFileCie extends ActionBarActivity {
                     String baggageA_weight_open = obj.getString("baggageA_weight");
                     String baggageB_weight_open = obj.getString("baggageB_weight");
                     String fuel_open = obj.getString("fuel");
+                    String dateTime_saved = "Saved at: " + obj.getString("dateTime");
 
                     Intent responseOpen = new Intent();
                     responseOpen.putExtra("pilot_weight", pilot_weight_open);
@@ -132,6 +133,7 @@ public class OpenFileCie extends ActionBarActivity {
                     responseOpen.putExtra("baggageA_weight", baggageA_weight_open);
                     responseOpen.putExtra("baggageB_weight", baggageB_weight_open);
                     responseOpen.putExtra("fuel", fuel_open);
+                    responseOpen.putExtra("dateTime_saved", dateTime_saved);
                     setResult(resultOpen, responseOpen);
                     finish();
 

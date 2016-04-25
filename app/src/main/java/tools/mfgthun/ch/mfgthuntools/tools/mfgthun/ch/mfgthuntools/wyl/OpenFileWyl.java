@@ -128,6 +128,7 @@ public class OpenFileWyl extends ActionBarActivity {
                     String baggageB_weight_open = obj.getString("baggageB_weight");
                     String wingLockers_weight_open = obj.getString("wingLockers_weight");
                     String fuel_open = obj.getString("fuel");
+                    String dateTime_saved = "Saved at: " + obj.getString("dateTime");
 
                     Intent responseOpen = new Intent();
                     responseOpen.putExtra("pilot_weight", pilot_weight_open);
@@ -136,6 +137,7 @@ public class OpenFileWyl extends ActionBarActivity {
                     responseOpen.putExtra("baggageB_weight", baggageB_weight_open);
                     responseOpen.putExtra("wing_lockers_weight", wingLockers_weight_open);
                     responseOpen.putExtra("fuel", fuel_open);
+                    responseOpen.putExtra("dateTime_saved", dateTime_saved);
                     setResult(resultOpen, responseOpen);
                     finish();
 

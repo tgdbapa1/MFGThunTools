@@ -55,6 +55,7 @@ public class WeightBalancePmk extends ActionBarActivity {
     TextView rampMomentText;
     TextView takeOffWeight;
     TextView takeOffMoment;
+    TextView savedTime;
 
     double pilotWeightDouble;
     double passengerWeightDouble;
@@ -232,17 +233,24 @@ public class WeightBalancePmk extends ActionBarActivity {
             String baggageA_weight = data.getStringExtra("baggageA_weight");
             String baggageB_weight = data.getStringExtra("baggageB_weight");
             String fuel = data.getStringExtra("fuel");
+            String dateTime = data.getStringExtra("dateTime_saved");
 
             pilotWeight = (EditText) findViewById(R.id.front_kg_pmk);
             passengerWeight = (EditText) findViewById(R.id.rear_kg_pmk);
             baggageAWeight = (EditText) findViewById(R.id.baggageA_kg_pmk);
             fuelUsg = (EditText) findViewById(R.id.fuel_usg_pmk);
+            savedTime = (TextView) findViewById(R.id.saved_time);
 
             pilotWeight.setText(pilot_weight);
             passengerWeight.setText(passenger_weight);
             baggageAWeight.setText(baggageA_weight);
             fuelUsg.setText(fuel);
+            savedTime.setText(dateTime);
 
+        } else if (resultCode == 200) {
+            String dateTime = data.getStringExtra("dateTime_saved");
+            savedTime = (TextView) findViewById(R.id.saved_time);
+            savedTime.setText(dateTime);
         }
     }
 

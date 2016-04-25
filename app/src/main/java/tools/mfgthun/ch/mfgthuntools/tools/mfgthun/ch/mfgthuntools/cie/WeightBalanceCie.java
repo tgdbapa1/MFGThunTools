@@ -56,7 +56,7 @@ public class WeightBalanceCie extends ActionBarActivity {
     TextView takeOffWeight;
     TextView takeOffArm;
     TextView takeOffMoment;
-
+    TextView savedTime;
     Button fileSave;
     String fileName;
     final Context context = this;
@@ -254,19 +254,26 @@ public class WeightBalanceCie extends ActionBarActivity {
             String baggageA_weight = data.getStringExtra("baggageA_weight");
             String baggageB_weight = data.getStringExtra("baggageB_weight");
             String fuel = data.getStringExtra("fuel");
+            String dateTime = data.getStringExtra("dateTime_saved");
 
             pilotWeight = (EditText) findViewById(R.id.pilot_weight_cie);
             passengerWeight = (EditText) findViewById(R.id.passenger_weight_cie);
             baggageAWeight = (EditText) findViewById(R.id.baggageA_weight_cie);
             baggageBWeight = (EditText) findViewById(R.id.baggageB_weight_cie);
             fuelLiter = (EditText) findViewById(R.id.fuel_liter_cie);
+            savedTime = (TextView) findViewById(R.id.saved_time);
 
             pilotWeight.setText(pilot_weight);
             passengerWeight.setText(passenger_weight);
             baggageAWeight.setText(baggageA_weight);
             baggageBWeight.setText(baggageB_weight);
             fuelLiter.setText(fuel);
+            savedTime.setText(dateTime);
 
+        } else if (resultCode == 200) {
+            String dateTime = data.getStringExtra("dateTime_saved");
+            savedTime = (TextView) findViewById(R.id.saved_time);
+            savedTime.setText(dateTime);
         }
     }
 

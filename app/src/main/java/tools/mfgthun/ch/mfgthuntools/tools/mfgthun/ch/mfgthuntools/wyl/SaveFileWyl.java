@@ -16,6 +16,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import tools.mfgthun.ch.mfgthuntools.R;
 
@@ -48,6 +50,7 @@ public class SaveFileWyl extends ActionBarActivity {
         final String wingLockers_weight = sender.getExtras().getString("wing_lockers");
         final String fuel = sender.getExtras().getString("fuel");
         final int resultSave = sender.getExtras().getInt("result");
+        final int resultOpen = sender.getExtras().getInt("result");
 
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,10 +65,15 @@ public class SaveFileWyl extends ActionBarActivity {
 
                 fileName = (EditText) findViewById(R.id.fileName);
                 fileNameText = searchPattern + fileName.getText().toString();
+                Intent sender = getIntent();
 
                 if (fileName.getText().length() != 0) {
 
                     try {
+
+                        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+                        String currentDateAndTime = sdf.format(new Date());
+
                         JSONObject obj = new JSONObject();
                         obj.put("pilot_weight", pilot_weight);
                         obj.put("passenger_weight", passenger_weight);
@@ -73,6 +81,7 @@ public class SaveFileWyl extends ActionBarActivity {
                         obj.put("baggageB_weight", baggageB_weight);
                         obj.put("wingLockers_weight", wingLockers_weight);
                         obj.put("fuel", fuel);
+                        obj.put("dateTime", currentDateAndTime);
 
 
                         try {
@@ -90,6 +99,17 @@ public class SaveFileWyl extends ActionBarActivity {
                             writer.close();
 
                         } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                        try {
+
+                            String dateTime_saved = "Saved at: " + currentDateAndTime;
+                            Intent responseOpen = new Intent();
+                            responseOpen.putExtra("dateTime_saved", dateTime_saved);
+                            setResult(resultOpen, responseOpen);
+                            finish();
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
 
