@@ -520,7 +520,7 @@ public class WeightBalancePmk extends ActionBarActivity {
         plot.setDomainLabel("C.G. LOCATION (INCHES AFT DATUM)");
         plot.getDomainLabelWidget().position(0, XLayoutStyle.ABSOLUTE_FROM_CENTER, 0, YLayoutStyle.RELATIVE_TO_BOTTOM,  AnchorPosition.BOTTOM_MIDDLE);
         plot.getDomainLabelWidget().getLabelPaint().setTextSize(20);
-        plot.getDomainLabelWidget().setWidth(300);
+        plot.getDomainLabelWidget().setWidth(400);
         plot.getDomainLabelWidget().setHeight(25);
         plot.getDomainLabelWidget().setPaddingBottom(5);
 
